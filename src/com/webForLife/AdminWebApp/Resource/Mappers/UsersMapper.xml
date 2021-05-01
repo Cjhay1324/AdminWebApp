@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.webForLife.AdminWebApp.Resource.Mappers.UsersMapper">
+	<resultMap type="com.webForLife.AdminWebApp.Model.User" id="userMap">
+		<result property="userid"	column="USERID"/>
+		<result property="username"	column="USERNAME"/>
+		<result property="password"	column="PASSWORD"/>
+		<result property="firstname"	column="FIRSTNAME"/>
+		<result property="lastname"	column="LASTNAME"/>
+		<result property="phonenumber"	column="PHONE"/>
+		<result property="email"	column="EMAIL"/>
+		<result property="role"	column="ROLE"/>
+		<result property="status"	column="STATUS"/>
+	</resultMap>
+	
+	<select id="getUsers" resultMap="userMap">
+		SELECT * FROM USERS
+	</select>
+</mapper>

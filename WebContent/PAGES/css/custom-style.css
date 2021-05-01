@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	width: 100;
+}
+
+body {
+	max-height: 601px;
+	max-width: 1366px;
+}
+
+.sidebar .nav-link:hover {
+	background: #454e56;
+	transition: .3s ease-in-out;
+}
+
+.active {
+	background: #454e56;
+}
+
+.users-col {
+	cursor: pointer;
+}
+
+.dropdown-item.active, .dropdown-item:active,
+ .dropdown-item:hover {
+ 	color: #fff;
+	background: #343a40!important;
+}
+
+input[type="checkbox"]{
+	height: 17px;
+	cursor: pointer;
+}
+
+/* Table scroll  */
+
+tbody {
+    display: block;
+    max-height: 430px!important;
+    overflow: visible!important;
+    overflow-y: scroll;
+}
+
+thead, tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;/* even columns width , fix width of table too*/
+}
+
+/* Scrollbar Design */
+::-webkit-scrollbar {
+   display:none!important;
+}
